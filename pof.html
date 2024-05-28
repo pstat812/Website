@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+          <title> Poon Sing Tat</title>
+         <link rel="stylesheet" type="text/css" href="pof.css">
+   </head>
+<body>
+    <header>
+        <a href="#" class="logo"> website </a> 
+      <ul>
+           <li> <a href="https://github.com/pstat812">GitHub</a></li>  
+           <li> <a href="#"> STEM </a></li> 
+      </ul> 
+    </header>
+    <section>
+           <img src="stars.png" alt="s" id="stars">
+           <img src="moon.png" alt="s" id="moon">
+           <img src="https://cdn.discordapp.com/attachments/611913416671625217/1107518007456047174/mountains_behind.png" alt="s" id="mountainis_behind">
+           <h2 id="text">David Poon</h2>
+           <a href="#intro" id="btn">Introduction</a>
+           <img src="https://cdn.discordapp.com/attachments/611913416671625217/1107518182966706256/mountains_front.png" alt="s" id="mountainis_front">
+    </section>
+
+    <div class="sec" id="sec">  
+        <br><br><br><br><br><br>  
+             <h2 id="intro">Introduction</h2>
+             <p id="introtext">My name is Poon Sing Tat. I am studying information engineering in The Chinese University of
+                Hong Kong. I made this website for a practicing my skills. 
+             </p>
+             <br><br><br><br><br><br>
+    </div>
+  
+    <script>
+          let stars = document.getElementById('stars');
+          let moon = document.getElementById('moon');
+          let mountainis_behind = document.getElementById('mountainis_behind');
+          let mountainis_front = document.getElementById('mountainis_front');
+          let text = document.getElementById('text');
+          let introtext = document.getElementById('introtext');
+          let header = document.querySelector('header ');
+
+           window.addEventListener('scroll',function(){
+               let value = window.scrollY;
+               stars.style.left = value + 'px';
+               moon.style.top = value*0.45+ 'px';
+               mountainis_behind.style.top = value * 0.6+ 'px';
+               mountainis_front.style.top = value *0.9+ 'px';
+               header.style.top = value + 'px';
+            
+               
+           })
+          
+    </script>
+
+</body>   
+
+
+ </html> 
